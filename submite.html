@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a cityt</title>
+    <style>
+       .form-section{
+        padding: 4em;
+        background-color: #eee;
+        text-align: center;
+        height: 600px;
+       }
+       form{
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        max-height: 600px;
+       }
+       input,textarea{
+        padding: 0.8em;
+        border: 1px solid #9bd9e3;
+        border-radius: 5px;
+        font-family: inherit;
+        transition: border 0.3s;
+       }
+       input:focus,textarea:focus{
+        border-color: #291ec1;
+       }
+       button{
+        padding: 0.8em;
+        background-color: #206f7b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+       }
+       button:hover{
+        background-color: #44abbe;
+       }
+       header{
+        background-color: rgb(120, 213, 213);
+            padding: 1em 2em;
+            height: 100px;
+            background-position: center;
+            justify-content: space-between;
+            display: flex;
+       }
+       nav ul{
+        list-style: none;
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+       }
+       nav a{
+        text-decoration: none;
+            color: #513fc8;
+            font-weight: bold;
+            transition: color 0.3s;
+       }
+       nav a:hover{
+        color: white;
+       }
+       #title{
+        position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            transform: translate(-50%,-50%);
+       }
+       .title{
+        color: #3986b6;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title">
+        <h1 class="title">Submit a City</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Galery.html">Gallery</a></li>
+                <li><a href="City.html">City Of the Day</a></li>
+                <li><a href="submite.html">Submit</a></li>
+            </ul>
+            </nav>
+    </header>
+    <section class="form-section">
+        <h2>Share a Cultural City</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="City Name" required>
+            <textarea placeholder="Tell us about the city's culture" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section> 
+</body>
+</html>

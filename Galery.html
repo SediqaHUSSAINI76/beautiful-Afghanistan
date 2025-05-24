@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Gallery</title>
+    <style>
+        .gallery{
+            padding: 2em;
+            text-align: center;
+        }
+        .gallary-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .gallary-item{
+            background-color: white;
+            border: 2px solid #26b1ca;
+            padding: 1em;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallary-item:hover{
+            transform: scale(1.05s);
+            background-color: #fff8dc;
+        }
+        .gallary-placeholder{
+            height: 150px;
+            background-color: #ccc;
+            margin: 1em 0;
+            border-radius: 8px;
+        }
+        nav ul{
+            list-style: none;
+            gap: 16px;
+            justify-content: center;
+            display: flex;
+            padding: 1px; 
+        }
+        nav a{
+            text-decoration: none;
+            color: #513fc8;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover{
+            color: white;
+        }
+        p{
+            justify-content: center;
+            font-size: medium;
+        }
+       
+        header{
+            background-color: rgb(120, 213, 213);
+            padding: 1em 2em;
+            height: 100px;
+            background-position: center;
+            justify-content: space-between;
+            display: flex;
+        }
+        .title{
+            color: #3986b6;
+            
+        }
+        #title{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title">
+        <h1 class="title">City Gallery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Galery.html">Gallery</a></li>
+                <li><a href="City.html">City Of the Day</a></li>
+                <li><a href="submite.html">Submit</a></li>
+            </ul>
+            </nav>
+    </header> 
+    <section class="gallary">
+        <div class="gallary-grid">
+            <div class="gallary-item">
+                <h3>Herat</h3>
+                <div class="gallery-placeholder">
+                    <img src="Herat/imag2.jpeg" alt="night of herat" style="width: 430px; height: 450px; border-radius: 8px;">
+                    <img src="Herat/dress3.jpeg" alt="modern herat" style="width: 430px; height: 470px; border-radius: 8px;">
+                    <img src="Herat/imag4 (2).jpeg" alt="combining of modern and old herat" style="width: 430px; height: 450px; border-radius: 8px;">
+                </div>
+                    <p> Herat is a city at the east of Afghanistan which is known for its famous clouths , historical places like Ekhtiyar-o-Din castle, Molan bridge and Jame mosqu
+                      and local food ( Kicheri,Gholortorsh and...) and it is famous with its nice accinte that is combine of tow culture Iranian and Afghan.   </p>
+            </div>
+            <div class="gallary-item">
+                <h3>Kabul</h3>
+                <div class="gallery-placeholder">
+                    <img src="Kabul/modern2.jpeg" alt="modern kabul" style="width: 430px; height: 450px; border-radius: 8px;">
+                    <img src="Kabul/modern3.jpeg" alt="kabul in a modernface" style="width: 430px; height: 450px; border-radius: 8px;">
+                    <img src="Kabul/combine 2.jpeg" alt="combining kabul old face and modern face" style="width: 430px; height: 450px; border-radius: 8px;">
+                </div>
+                <p>Kabul is the capital of Afghanistan which so crowded city and a city that have historical background and now it is combining of old Afghanistan
+                    and new face of that which worth culture, food and clouths.
+                </p> 
+            </div>
+            <div class="gallary-item">
+                <h3>Bamyan</h3>
+                <div class="gallery-placeholder">
+                    <img src="Bamyan/boda1.jpeg" alt="Boda" style="width: 430px; height: 450px; border-radius: 8px;">
+                    <img src="Bamyan/band amir 1.jpeg" alt=" Band Amir lake" style="width: 430px; height: 450px; border-radius: 8px;">
+                    <img src="Bamyan/frish 1.jpeg" alt="Frish aere Bamyan" style="width: 430px; height: 450px; border-radius: 8px;">
+                </div>
+                <p> Bamyan a city in Afghanistan with an ancient history and fresh air, recognized by UNESCO as National Park of Afghanistan, with waem-blooded people and a rich culture
+                    that attracts thousands of visitores from all over the world every year.
+                </p>
+            </div>
+        </div>
+                      
+    </section>
+  
+</body>
+</html>

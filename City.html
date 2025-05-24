@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Of the Day</title>
+    <style>
+       nav ul{
+        list-style: none;
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+       }
+       nav a{
+        text-decoration: none;
+            color: #513fc8;
+            font-weight: bold;
+            transition: color 0.3s;
+       }
+       nav a:hover{
+        color: white;
+       }
+       .featured{
+        padding: 2em;
+        background-color: #fdf6e3;
+       }
+       .featured-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        align-items: center;
+        justify-content: center;
+       }
+       .featured-text{
+        flex: 1;
+        min-width: 250px;
+        background-color: white;
+        padding: 1.5em;
+        border: 2px solid #6aacc6;
+        border-radius: 10px;
+       }
+       .featured-image{
+        flex: 1;
+        min-width: 250px;
+        height: 500px;
+        background-color: #afe7ec;
+        border-radius: 10px;
+       }
+       header{
+        background-color: rgb(120, 213, 213);
+            padding: 1em 2em;
+            height: 100px;
+            background-position: center;
+            justify-content: space-between;
+            display: flex;
+       }
+       .title{
+        color: #3986b6;
+       }
+       #title{
+        position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            transform: translate(-50%,-50%);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title">
+        <h1 class="title">City of the Day</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Galery.html">Gallery</a></li>
+                <li><a href="City.html">City Of the Day</a></li>
+                <li><a href="submite.html">Submit</a></li>
+            </ul>
+            </nav>
+    </header> 
+   <section class="featured">
+    <div class="featured-container">
+        <div class="featured-text">
+            <h2>Herat</h2>
+            <p><strong>Tradional food</strong>:Kicheri</p>
+            <p><strong>Tradional clothing</strong>:Gand Afghani and Perahan Tonban</p>
+            <p><strong>Famous places</strong>:Molan bridge and Ekhtiyar-o-Din costel</p>
+        </div>
+        <div class="featured-image">
+            <img src="Herat/dress3.jpeg" alt="perahan Tonban for male" style="width: 220px; height: 230px; border-radius: 8px;">
+            <img src="Herat/dress2.jpeg" alt="Gand Afghani for women"style="width: 220px; height: 230px; border-radius: 8px;">
+            <img src="Herat/malan.png" alt="Molan bridge"style="width: 220px; height: 230px; border-radius: 8px;">
+            <img src="Herat/kichiry.png" alt="Kicheri a local food "style="width: 220px; height: 230px; border-radius: 8px;">
+            <img src="Herat/gholortorsh.jpeg" alt="Gholortorsh another local food"style="width: 220px; height: 230px; border-radius: 8px;">
+            <img src="Herat/masuq.png" alt="Jame mosqu a ancaint mosqu" style="width: 220px; height: 230px; border-radius: 8px;">
+        </div>
+    </div>
+        
+   </section>
+  
+</body>
+</html>
